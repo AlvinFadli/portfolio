@@ -23,7 +23,16 @@ function PortfolioDetailContainer({ portfolioItems }: portfolioDetailProps) {
           <h2 className="font-bold text-2xl">Portfolio</h2>
           <p className="text-slate-500">
             Sharing projects that highlight my learning and focus on creating
-            useful solutions.
+            useful solutions. Explore more projects on{" "}
+            <span>
+              <Link
+                className="font-semibold text-primary-600"
+                href={"https://github.com/alvinfadli"}
+                target="_blank"
+              >
+                Github
+              </Link>
+            </span>
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 mt-6">

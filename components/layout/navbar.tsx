@@ -1,9 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { SunIcon } from "lucide-react";
 import Link from "next/link";
-import { Button } from "../ui/button";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -29,12 +27,12 @@ const Navbar = () => {
         </div>
         <div>
           <div className="flex gap-5 text-base">
-            <Button className="hover:bg-transparent group" variant={"ghost"}>
+            {/* <Button className="hover:bg-transparent group" variant={"ghost"}>
               <SunIcon
                 size={20}
                 className="text-primary-600 group-hover:rotate-90 duration-300 transition-all"
               />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
