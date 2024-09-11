@@ -1,11 +1,7 @@
 "use client";
-import { useRouter } from "next/navigation";
-import { PortfolioContainer } from "./portfolio-container";
 import { PortfolioDetailContainer } from "./portfolio-detail-container";
 
 function PortfolioDetailSection() {
-  const router = useRouter();
-
   const portfolioItems = [
     {
       banner: "/images/portfolio/tekinfo-bot.png",

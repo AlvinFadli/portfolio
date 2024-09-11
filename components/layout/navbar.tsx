@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="flex gap-10">
           <Link
             href={"/"}
-            className="font-bold flex items-center text-emerald-500 text-xl leading-none"
+            className="font-bold flex items-center text-primary-600 text-xl leading-none"
           >
             <h1 className="">Alvin Fadli</h1>
           </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
             <Button className="hover:bg-transparent group" variant={"ghost"}>
               <SunIcon
                 size={20}
-                className="text-emerald-600 group-hover:rotate-90 duration-300 transition-all"
+                className="text-primary-600 group-hover:rotate-90 duration-300 transition-all"
               />
             </Button>
           </div>

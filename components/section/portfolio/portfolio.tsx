@@ -3,8 +3,6 @@ import { useRouter } from "next/navigation";
 import { PortfolioContainer } from "./portfolio-container";
 
 function PortfolioSection() {
-  const router = useRouter();
-
   const portfolioItems = [
     {
       banner: "/images/portfolio/tekinfo-bot.png",
