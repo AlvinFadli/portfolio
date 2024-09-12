@@ -17,15 +17,15 @@ function PortfolioSection() {
       details: "Next.js, Python, Llama3",
     },
     {
-      banner: "/images/portfolio/sibi-signs.png",
-      title: "Sibi Signs",
+      banner: "/images/portfolio/si-library.png",
+      title: "Library Information System",
       description:
-        "Web Application utilizing Machine Learning to classify Indonesian SIBI-styled sign language.",
-      alt: "Sibi Signs",
-      buttonLink: "https://github.com/alvinfadli/sibi-sign/",
+        "A web application for managing library information, built using Laravel and MySQL.",
+      alt: "Library Information System",
+      buttonLink: "https://github.com/alvinfadli/si-perpustakaan",
       companyName: "Personal",
       buttonLabel: "Code",
-      details: "Python, Flask, OpenCV",
+      details: "PHP, Laravel, MySQL",
     },
   ];
 

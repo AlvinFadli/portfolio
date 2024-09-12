@@ -17,6 +17,17 @@ function PortfolioDetailSection() {
       details: "Next.js, Python, Llama3",
     },
     {
+      banner: "/images/portfolio/si-library.png",
+      title: "Library Information System",
+      description:
+        "A web application for managing library information, built using Laravel and MySQL.",
+      alt: "Library Information System",
+      buttonLink: "https://github.com/alvinfadli/si-perpustakaan",
+      companyName: "Personal",
+      buttonLabel: "Code",
+      details: "PHP, Laravel, MySQL",
+    },
+    {
       banner: "/images/portfolio/sibi-signs.png",
       title: "Sibi Signs",
       description:
