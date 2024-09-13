@@ -17,11 +17,7 @@ function PortfolioContainer({ portfolioItems }: PortfolioProps) {
             useful solutions.
           </p>
         </div>
-        <Button
-          asChild
-          className="rounded-full border-primary-600 text-primary-600"
-          variant={"outline"}
-        >
+        <Button asChild variant={"secondary"}>
           <Link href={"/portfolio"}>Browse all</Link>
         </Button>
       </div>

@@ -28,7 +28,7 @@ function HeroSection() {
         </div>
       </div>
       <div className="mt-5">
-        <Button className="bg-primary-600 rounded-full text-white" asChild>
+        <Button asChild>
           <Link href={"mailto:alvinfdl21@gmail.com"}>
             <MailIcon className="mr-2 h-4 w-4" />
             Reach out via email

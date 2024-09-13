@@ -57,18 +57,14 @@ function Card({
         </div>
         <div className="flex gap-2">
           {buttonLink && (
-            <Button className="w-full rounded-full bg-primary-600" asChild>
+            <Button asChild size="fullWidth">
               <Link href={buttonLink} target="_blank">
                 {buttonLabel}
               </Link>
             </Button>
           )}
           {buttonSecondaryLabel && buttonSecondaryLink && (
-            <Button
-              className="w-full rounded-full text-primary-600 border-primary-600"
-              asChild
-              variant="outline"
-            >
+            <Button variant="secondary" asChild size="fullWidth">
               <Link href={buttonSecondaryLink} target="_blank">
                 {buttonSecondaryLabel}
               </Link>

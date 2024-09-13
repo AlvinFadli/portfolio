@@ -31,7 +31,7 @@ function AboutSection() {
           </p>
         </div>
         <div className="mt-4">
-          <Button className="bg-primary-600 rounded-full text-white" asChild>
+          <Button asChild>
             <Link
               href={
                 "https://drive.google.com/file/d/1qFvdLDP_yrS5Cwipf-FngezYO4iCom4b/view?usp=sharing"

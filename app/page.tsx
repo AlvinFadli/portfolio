@@ -42,10 +42,7 @@ export default function Home() {
               </Link>
             </span>
           </h2>
-          <Button
-            className="mt-4 rounded-full bg-primary-600 px-5 py-5"
-            asChild
-          >
+          <Button className="mt-4" asChild>
             <Link href={"mailto:alvinfdl21@gmail.com"}>
               <MailIcon className="mr-2 h-4 w-4" />
               Get in touch
