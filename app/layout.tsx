@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/navbar";
 import { GeistSans } from "geist/font/sans";
 import Footer from "@/components/layout/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Alvin Fadli Dwi Mulya",
@@ -26,7 +27,10 @@ export default function RootLayout({
 
           <div className="w-full px-5 md:w-8/12 2xl:w-6/12 md:mx-auto">
             <Navbar />
-            <div className="">{children}</div>
+            <div className="">
+              {children}
+              <Analytics />
+            </div>
             <Footer />
           </div>
         </div>

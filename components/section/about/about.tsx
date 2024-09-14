@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { DownloadIcon } from "lucide-react";
 import Image from "next/image";
-import { Poor_Story } from "@next/font/google";
+import { Poor_Story } from "next/font/google";
 import Link from "next/link";
 const poorStory = Poor_Story({ weight: "400", subsets: ["latin"] });
 
