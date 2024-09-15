@@ -34,7 +34,7 @@ function AboutSection() {
           <Button asChild>
             <Link
               href={
-                "https://drive.google.com/file/d/1qFvdLDP_yrS5Cwipf-FngezYO4iCom4b/view?usp=sharing"
+                "https://drive.google.com/file/d/1Ab7tL6U47mGi_3QkFbViJIUqYt6krd4V/view?usp=sharing"
               }
               target="_blank"
             >
