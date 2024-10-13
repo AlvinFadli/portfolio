@@ -12,11 +12,8 @@ export type CardProps = CardDetailProps & {
   title: string;
   description: string;
   alt: string;
-  buttonLink?: string;
-  buttonSecondaryLink?: string;
+  buttonLink: string;
   withCardDetail?: boolean;
-  buttonLabel?: string;
-  buttonSecondaryLabel?: string;
 };
 
 function Card({
@@ -26,11 +23,8 @@ function Card({
   alt,
   withCardDetail = false,
   buttonLink,
-  buttonSecondaryLink,
   companyName,
   details,
-  buttonLabel,
-  buttonSecondaryLabel,
 }: CardProps) {
   return (
     <div
@@ -47,29 +41,22 @@ function Card({
           className="rounded-t-xl object-cover"
         />
       </div>
-      <div className="p-3 flex flex-col justify-between gap-4 flex-1">
-        {withCardDetail && (
-          <CardDetail companyName={companyName} details={details} />
-        )}
-        <div className="grid gap-2">
-          <p className="font-bold">{title}</p>
-          <p className="text-sm">{description}</p>
+      <div className="p-3 flex flex-col gap-4 justify-between flex-1">
+        <div className="space-y-3">
+          {withCardDetail && (
+            <CardDetail companyName={companyName} details={details} />
+          )}
+          <div className="grid gap-2">
+            <p className="font-bold">{title}</p>
+            <p className="text-sm">{description}</p>
+          </div>
         </div>
         <div className="flex gap-2">
-          {buttonLink && (
-            <Button asChild size="fullWidth">
-              <Link href={buttonLink} target="_blank">
-                {buttonLabel}
-              </Link>
-            </Button>
-          )}
-          {buttonSecondaryLabel && buttonSecondaryLink && (
-            <Button variant="secondary" asChild size="fullWidth">
-              <Link href={buttonSecondaryLink} target="_blank">
-                {buttonSecondaryLabel}
-              </Link>
-            </Button>
-          )}
+          <Button asChild size="fullWidth">
+            <Link href={buttonLink} target="_blank">
+              Visit
+            </Link>
+          </Button>
         </div>
       </div>
     </div>
