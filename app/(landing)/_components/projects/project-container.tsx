@@ -2,11 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardProps } from "@/components/ui/card";
 import Link from "next/link";
 
-type PortfolioProps = {
-  portfolioItems: CardProps[];
+type ProjectProps = {
+  projectItems: CardProps[];
 };
 
-function PortfolioContainer({ portfolioItems }: PortfolioProps) {
+function ProjectContainer({ projectItems }: ProjectProps) {
   return (
     <section className="pt-5" id="portfolio">
       <div className="flex justify-between gap-10 items-center">
@@ -22,7 +22,7 @@ function PortfolioContainer({ portfolioItems }: PortfolioProps) {
         </Button>
       </div>
       <div className="grid gap-8 md:grid-cols-2 mt-6">
-        {portfolioItems.map((item, index) => (
+        {projectItems.map((item, index) => (
           <Card
             key={index}
             banner={item.banner}
@@ -30,12 +30,9 @@ function PortfolioContainer({ portfolioItems }: PortfolioProps) {
             title={item.title}
             description={item.description}
             buttonLink={item.buttonLink}
-            buttonSecondaryLink={item.buttonSecondaryLink}
             companyName={item.companyName}
             details={item.details}
             withCardDetail={true}
-            buttonSecondaryLabel={item.buttonSecondaryLabel}
-            buttonLabel={item.buttonLabel}
           />
         ))}
       </div>
@@ -43,4 +40,4 @@ function PortfolioContainer({ portfolioItems }: PortfolioProps) {
   );
 }
 
-export { PortfolioContainer };
+export { ProjectContainer };

@@ -1,8 +1,8 @@
 "use client";
-import { PortfolioContainer } from "./portfolio-container";
+import { ProjectContainer } from "./project-container";
 
-function PortfolioSection() {
-  const portfolioItems = [
+function ProjectSection() {
+  const projectItems = [
     {
       banner: "/images/portfolio/tekinfo-bot.png",
       title: "Tekinfo-Bot",
@@ -29,7 +29,7 @@ function PortfolioSection() {
     },
   ];
 
-  return <PortfolioContainer portfolioItems={portfolioItems} />;
+  return <ProjectContainer projectItems={projectItems} />;
 }
 
-export { PortfolioSection };
+export { ProjectSection };

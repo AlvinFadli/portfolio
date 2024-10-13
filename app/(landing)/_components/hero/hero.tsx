@@ -2,15 +2,15 @@ import { FaJava, FaLaravel, FaReact } from "react-icons/fa";
 import { SiNextdotjs, SiSpring } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { MailIcon } from "lucide-react";
-import { Button } from "../../ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 function HeroSection() {
   return (
     <section className="mt-14 mb-10 flex flex-col justify-center w-5/6">
       <h2 className="font-bold text-4xl">
-        Developing innovative digital solutions to address real-world
-        challenges.
+        Developing software to solve{" "}
+        <span className="inline-block">real-world</span> challenges.
       </h2>
 
       <p className="text-lg text-slate-600 mt-2">
