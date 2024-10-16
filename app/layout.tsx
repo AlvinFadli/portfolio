@@ -25,12 +25,10 @@ export default function RootLayout({
             <div className="absolute top-[15%] left-0 w-64 h-64 bg-gradient-to-r from-[#89c2d9] to-[#f3e99f] rounded-full opacity-40 filter blur-3xl animate-move animate-colorChange"></div>
           </div>
 
-          <div className="w-full px-5 md:w-8/12 2xl:w-6/12 md:mx-auto">
+          <div className="w-full px-5 sm:px-10 md:w-10/12 lg:w-8/12 2xl:w-6/12 mx-auto">
             <Navbar />
-            <div className="">
-              {children}
-              <Analytics />
-            </div>
+            {children}
+            <Analytics />
             <Footer />
           </div>
         </div>
