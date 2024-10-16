@@ -102,7 +102,7 @@ export default function AboutPage() {
       </section>
       <div className="w-full md:w-[calc(100%+8rem)] md:-mx-16 mx-auto my-14 md:my-24 ">
         <div className="flex flex-col md:flex-row w-full mx-auto items-center">
-          <div className="w-3/5 shadow-sm h-60 rounded-lg -rotate-6 -mr-10">
+          <div className="w-4/5 md:w-3/5 shadow-sm h-60 rounded-lg -rotate-6 md:-mr-10">
             <Image
               src={"/images/about/henkel.webp"}
               alt="Profile"
@@ -111,7 +111,7 @@ export default function AboutPage() {
               height={500}
             />
           </div>
-          <div className="w-3/5 shadow-sm h-60 rounded-lg md:-mt-10 rotate-3">
+          <div className="w-4/5 md:w-3/5 shadow-sm h-60 rounded-lg md:-mt-10 rotate-3">
             <Image
               src={"/images/about/indonesiannight.webp"}
               alt="Profile"
@@ -120,7 +120,7 @@ export default function AboutPage() {
               height={500}
             />
           </div>
-          <div className="w-3/5 shadow-sm h-60 rounded-lg -rotate-6 md:-ml-10 md:mt-10">
+          <div className="w-4/5 md:w-3/5 shadow-sm h-60 rounded-lg -rotate-6 md:-ml-10 md:mt-10">
             <Image
               src={"/images/about/techbros.webp"}
               alt="Profile"
@@ -136,7 +136,9 @@ export default function AboutPage() {
         <div className="flex-1 flex flex-col space-y-4 divide-y">
           {reversedWorkExperience.map((item, index) => (
             <div
-              className={`flex justify-between ${index > 0 ? `pt-4` : `pt-0`}`}
+              className={`flex flex-col md:flex-row justify-between ${
+                index > 0 ? `pt-4` : `pt-0`
+              }`}
               key={index}
             >
               <div>
