@@ -145,9 +145,12 @@ export default function HomePage() {
               title={item.title}
               description={item.description}
               buttonLink={item.buttonLink}
+              buttonSecondaryLink={item.buttonSecondaryLink}
               companyName={item.companyName}
               details={item.details}
               withCardDetail={true}
+              buttonSecondaryLabel={item.buttonSecondaryLabel}
+              buttonLabel={item.buttonLabel}
             />
           ))}
         </div>
