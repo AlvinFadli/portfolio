@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <Section>
       <Container>
-        <h2 className="font-bold text-4xl w-3/4">
+        <h2 className="font-bold text-4xl md:w-3/4">
           Developing software to solve{" "}
           <span className="inline-block">real-world</span> challenges.
         </h2>
