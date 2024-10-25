@@ -1,12 +1,10 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const Navbar = () => {
-  const pathname = usePathname();
   return (
-    <>
+    <nav className="mx-auto max-w-4xl px-6 sm:px-8">
       <div className="flex justify-between items-center py-8">
         <div className="flex gap-10">
           <Link
@@ -15,15 +13,11 @@ const Navbar = () => {
           >
             <h1 className="">Alvin Fadli</h1>
           </Link>
-          {pathname === "/" ? (
-            <div className="flex gap-5 text-base">
-              <Link href="#about">About</Link>
-              <Link href="#portfolio">Portfolio</Link>
-              {/* <Link href="#contact">Contact</Link> */}
-            </div>
-          ) : (
-            <div></div>
-          )}
+          <div className="flex gap-5 text-base">
+            <Link href="/about">About</Link>
+            <Link href="/project">Project</Link>
+            {/* <Link href="/blog">Blog</Link> */}
+          </div>
         </div>
         <div>
           <div className="flex gap-5 text-base">
@@ -36,7 +30,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </>
+    </nav>
   );
 };
 
