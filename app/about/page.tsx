@@ -104,7 +104,7 @@ export default function AboutPage() {
                 <Button asChild>
                   <Link
                     href={
-                      "https://drive.google.com/file/d/1qFvdLDP_yrS5Cwipf-FngezYO4iCom4b/view?usp=sharing"
+                      "https://drive.google.com/file/d/1KJ7OuRJXEiQpFCBeDgUjnfYiIw1QT1xb/view?usp=sharing"
                     }
                     target="_blank"
                   >
