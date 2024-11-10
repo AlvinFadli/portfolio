@@ -15,10 +15,10 @@ export default function ProjectShowcase() {
       <Container>
         <div className="flex justify-between gap-10 items-center">
           <div>
-            <h2 className="font-bold text-2xl">Selected projects</h2>
+            <h2 className="font-bold text-2xl">Projects</h2>
             <p className="text-slate-500">
-              Sharing projects that highlight my learning and focus on creating
-              useful solutions.
+              Sharing personal projects that highlight my learning and focus on
+              creating useful solutions.
             </p>
           </div>
           <Button asChild variant={"secondary"}>
