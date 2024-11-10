@@ -11,25 +11,30 @@ import { Container } from "../craft";
 export default function CTA() {
   return (
     <Container>
-      <h2 className="text-4xl font-semibold w-full md:w-10/12 mt-10">
-        Thanks for visiting my website, Connect with me on LinkedIn{" "}
+      <h2 className="text-4xl font-semibold w-full mt-10">
+        Thank you for visiting my website, Connect with me on{" "}
         <span className="inline-block -mb-1">
           <Link
             href={"https://www.linkedin.com/in/alvinfadli/"}
             target="_blank"
-            className="group"
+            className="group flex"
           >
-            <FaLinkedin size={35} className="group-hover:text-primary-600" />
+            <p className="group-hover:text-primary-600">LinkedIn</p>
+            <FaLinkedin
+              size={35}
+              className="ml-1 group-hover:text-primary-600"
+            />
           </Link>
         </span>{" "}
-        and check my code on GitHub{" "}
+        and check my code on{" "}
         <span className="inline-block -mb-1">
           <Link
             href={"https://github.com/alvinfadli"}
             target="_blank"
-            className="group"
+            className="group flex"
           >
-            <FaGithub size={35} className="group-hover:text-primary-600" />
+            <p className="group-hover:text-primary-600">GitHub</p>
+            <FaGithub size={35} className="ml-1 group-hover:text-primary-600" />
           </Link>
         </span>
       </h2>
