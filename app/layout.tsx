@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/layout/navbar";
-import { GeistSans } from "geist/font/sans";
-import Footer from "@/components/layout/footer";
 import { Analytics } from "@vercel/analytics/react";
 import Background from "@/components/background";
+import { Poppins } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Alvin Fadli Dwi Mulya",
   description: "Personal portfolio of Alvin Fadli Dwi Mulya",
 };
+
+const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -17,13 +18,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${GeistSans.className} scroll-smooth`}>
+    <html lang="en" className={`${poppins.className} scroll-smooth`}>
       <body className={`antialiased w-full mx-auto`}>
         <Background>
-          <Navbar />
-          {children}
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
           <Analytics />
-          <Footer />
         </Background>
       </body>
     </html>

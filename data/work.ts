@@ -1,8 +1,13 @@
 export const WorkExperience = [
   {
-    title: "Software Engineer Intern",
-    company: "Sagara Technology",
-    timespan: "Aug 2023 - Nov 2023",
+    title: "Junior Software Engineer",
+    company: "Alturian",
+    timespan: "Nov 2024 - Present",
+  },
+  {
+    title: "Associate Software Engineer (Part-time)",
+    company: "Magna Partners",
+    timespan: "May 2024 - Present",
   },
   {
     title: "Software Engineer Intern",
@@ -10,8 +15,8 @@ export const WorkExperience = [
     timespan: "Nov 2023 - Feb 2024",
   },
   {
-    title: "Associate Software Engineer",
-    company: "Magna Partners",
-    timespan: "May 2024 - Present",
+    title: "Software Engineer Intern",
+    company: "Sagara Technology",
+    timespan: "Aug 2023 - Nov 2023",
   },
 ];
