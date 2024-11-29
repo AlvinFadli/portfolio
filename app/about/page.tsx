@@ -4,14 +4,23 @@ import Link from "next/link";
 import { WorkExperience } from "@/data/work";
 import Image from "next/image";
 import { Container, Main, Section } from "@/components/craft";
+import HomeButton from "@/components/home-button";
+import Footer from "@/components/layout/footer";
+import { ModeToggle } from "@/components/toogle-mode";
 
 export default function AboutPage() {
-  const reversedWorkExperience = WorkExperience.reverse();
   return (
     <Main>
       <Section>
-        <Container>
+        <Container className="relative">
+          <Container className="absolute top-5 right-0">
+            <ModeToggle />
+          </Container>
+          <Container className="mb-6 pt-12">
+            <HomeButton />
+          </Container>
           <Container id="content">
+            <div></div>
             <div>
               <div className="w-full lg:w-3/5 text-center md:text-left">
                 <h2 className="font-bold text-4xl [&>span]:text-primary-600 ">
@@ -29,7 +38,7 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="flex-1 flex flex-col gap-5 justify-center text-center md:text-left">
-                  <p className="text-pretty text-slate-600">
+                  <p className="text-pretty">
                     As a software engineer with one year of experience. I
                     specialize in creating amazing website with modern
                     technologies.
@@ -86,7 +95,12 @@ export default function AboutPage() {
                   </span>{" "}
                   focusing on research and developments of their digital
                   products. I gained a lot of experience both on soft skills and
-                  hard skills. Currently, I&apos;m working as a part-time{" "}
+                  hard skills. Currently, I&apos;m working as a{" "}
+                  <span className="text-primary-600">
+                    Junior Software Engineer
+                  </span>{" "}
+                  at <span className="text-primary-600">Alturian</span> and
+                  part-time{" "}
                   <span className="text-primary-600">
                     Associate Software Engineer
                   </span>{" "}
@@ -152,24 +166,22 @@ export default function AboutPage() {
             <div className="flex flex-col lg:flex-row gap-5 mt-8">
               <p className="font-bold text-2xl w-2/5">Work Experience</p>
               <div className="flex-1 flex flex-col space-y-4 divide-y">
-                {reversedWorkExperience.map((item, index) => (
-                  <div
-                    className={`flex flex-col md:flex-row justify-between ${
-                      index > 0 ? `pt-4` : `pt-0`
-                    }`}
-                    key={index}
-                  >
+                {WorkExperience.map((item, index) => (
+                  <div className={`${index > 0 ? `pt-4` : `pt-0`}`} key={index}>
                     <div>
                       <h2 className="font-semibold">{item.title}</h2>
-                      <p className="text-sm">{item.company}</p>
                     </div>
-                    <div className="flex justify-end items-end">
+                    <div className="flex justify-between">
+                      <p className="text-sm">{item.company}</p>
                       <p className="text-sm">{item.timespan}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
+          </Container>
+          <Container>
+            <Footer />
           </Container>
         </Container>
       </Section>

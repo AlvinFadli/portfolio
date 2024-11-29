@@ -9,7 +9,7 @@ export default function HomeButton() {
         <Button
           variant={"ghost"}
           asChild
-          className="px-0 hover:bg-white hover:text-primary-600 hover:font-medium"
+          className="px-0 hover:bg-transparent hover:text-primary-600 hover:font-medium"
         >
           <Link href={"/"}>
             <ArrowLeftIcon className="mr-2 h-4 w-4" />
