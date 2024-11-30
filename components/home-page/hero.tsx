@@ -54,7 +54,19 @@ export default function Hero() {
           . Proficient in fullstack development.
         </p>
         <p className="text-base text-slate-600 dark:text-slate-200 mt-2 mb-8">
-          Book my{" "}
+          Check my code on{" "}
+          <span>
+            <a
+              href="http://github.com/alvinfadli"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline underline-offset-4 hover:cursor-ne-resize"
+            >
+              github
+            </a>
+          </span>
+          {", "}
+          book my{" "}
           <span>
             <a
               href="http://cal.com/alvinfadli"
@@ -64,7 +76,8 @@ export default function Hero() {
             >
               calendar
             </a>
-          </span>{" "}
+          </span>
+          {", "}
           or email me at{" "}
           <span>
             <a
@@ -98,7 +111,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="mt-5">
-          <div className="mt-4">
+          <div className="mt-4 flex h-full items-center gap-5">
             <Button asChild className="dark:text-white dark:hover:text-black">
               <Link href="/about" className="hover:cursor-pointer">
                 <SendIcon className="mr-2 h-4 w-4 " />
