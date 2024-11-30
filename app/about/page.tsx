@@ -1,21 +1,19 @@
-import { Button } from "@/components/ui/button";
-import { MailIcon, PaperclipIcon } from "lucide-react";
 import Link from "next/link";
-import { WorkExperience } from "@/data/work";
 import Image from "next/image";
+
+import { Button } from "@/components/ui/button";
 import { Container, Main, Section } from "@/components/craft";
 import HomeButton from "@/components/home-button";
 import Footer from "@/components/layout/footer";
-import { ModeToggle } from "@/components/toogle-mode";
+
+import { MailIcon, PaperclipIcon } from "lucide-react";
+import { WorkExperience } from "@/data/work";
 
 export default function AboutPage() {
   return (
     <Main>
       <Section>
         <Container className="relative">
-          <Container className="absolute top-5 right-0">
-            <ModeToggle />
-          </Container>
           <Container className="mb-6 pt-12">
             <HomeButton />
           </Container>

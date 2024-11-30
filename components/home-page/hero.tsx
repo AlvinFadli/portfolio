@@ -1,23 +1,16 @@
-// next.js imports
 import Link from "next/link";
 
-// local component imports
 import { Container, Section } from "@/components/craft";
 import { Button } from "@/components/ui/button";
 
-// icon imports
 import { FaJava, FaLaravel, FaReact } from "react-icons/fa";
 import { SiNextdotjs, SiSpring } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SendIcon } from "lucide-react";
-import { ModeToggle } from "../toogle-mode";
 
 export default function Hero() {
   return (
     <Section className="relative min-h-dvh flex flex-col justify-center">
-      <Container className="absolute top-5 right-0">
-        <ModeToggle />
-      </Container>
       <Container className="[&_span]:text-primary-500">
         <h2 className="font-extrabold text-3xl pb-2">Alvin Fadli Dwi Mulya</h2>
         <h2 className="text-2xl pb-3.5">

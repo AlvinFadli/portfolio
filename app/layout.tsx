@@ -4,6 +4,8 @@ import { Analytics } from "@vercel/analytics/react";
 import Background from "@/components/background";
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Container } from "@/components/craft";
+import { ModeToggle } from "@/components/toogle-mode";
 
 export const metadata: Metadata = {
   title: "Alvin Fadli Dwi Mulya",
@@ -19,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.className} scroll-smooth`}>
-      <body className={`antialiased w-full mx-auto`}>
+      <body className={`relative antialiased w-full mx-auto`}>
         <Background>
           <ThemeProvider
             attribute="class"
@@ -27,6 +29,9 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Container className="mx-auto max-w-[45rem] z-50 absolute top-5 right-0">
+              <ModeToggle />
+            </Container>
             {children}
           </ThemeProvider>
           <Analytics />
