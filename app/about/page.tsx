@@ -113,16 +113,9 @@ export default function AboutPage() {
                   <span className="text-primary-600">English</span>, which helps
                   me collaborate effectively in diverse teams.
                 </p>
-                <Button asChild>
-                  <Link
-                    href={
-                      "https://drive.google.com/file/d/1KJ7OuRJXEiQpFCBeDgUjnfYiIw1QT1xb/view?usp=sharing"
-                    }
-                    target="_blank"
-                  >
-                    <PaperclipIcon className="mr-2 h-4 w-4" />
-                    My Resume
-                  </Link>
+                <Button disabled>
+                  <PaperclipIcon className="mr-2 h-4 w-4" />
+                  My Resume
                 </Button>
               </div>
             </div>
