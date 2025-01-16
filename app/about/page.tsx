@@ -27,7 +27,7 @@ export default function AboutPage() {
                 </h2>
               </div>
               <div className="mt-8 text-pretty space-y-3">
-                <div className="w-4/5 sm:w-3/5 md:w-2/5 mx-auto md:float-right px-2 pt-2 pb-10 bg-slate-50 rounded-sm -rotate-3 md:ml-5 mb-10">
+                <div className="w-4/5 sm:w-3/5 md:w-2/5 mx-auto md:float-right px-2 pt-2 pb-10 bg-slate-50 rounded-sm -rotate-3 md:ml-5 mb-10 border shadow-md">
                   <Image
                     src={"/images/about/profile-2.webp"}
                     alt="Profile"
