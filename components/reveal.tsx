@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ReactNode } from "react";
 
@@ -18,9 +18,14 @@ const RevealComponent = ({
   stagger?: number;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    if (containerRef.current) {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (isMounted && containerRef.current) {
       const childElements = containerRef.current.children;
       gsap.fromTo(
         childElements,
@@ -28,11 +33,11 @@ const RevealComponent = ({
         { opacity: 1, y: 0, duration, stagger, ease: "sine.in" }
       );
     }
-  }, [duration, fromY, stagger]);
+  }, [isMounted, duration, fromY, stagger]);
 
   return (
     <div ref={containerRef} className={className}>
-      {children}
+      {isMounted && children}
     </div>
   );
 };
