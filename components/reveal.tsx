@@ -30,7 +30,7 @@ const RevealComponent = ({
       gsap.fromTo(
         childElements,
         { opacity: 0, y: fromY },
-        { opacity: 1, y: 0, duration, stagger, ease: "sine.in" }
+        { opacity: 1, y: 0, duration, stagger }
       );
     }
   }, [isMounted, duration, fromY, stagger]);
