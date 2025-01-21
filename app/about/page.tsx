@@ -8,10 +8,13 @@ import Footer from "@/components/layout/footer";
 import { PaperclipIcon } from "lucide-react";
 import { Poor_Story } from "next/font/google";
 import RevealComponent from "@/components/reveal";
+import { getBase64 } from "@/lib/getBase64";
 
 const poorStory = Poor_Story({ weight: "400", subsets: ["latin"] });
 
-export default function AboutPage() {
+const AboutPage = async () => {
+  const blurDataURL = await getBase64("images/about/profile-2.webp");
+
   return (
     <Main>
       <Section>
@@ -38,7 +41,9 @@ export default function AboutPage() {
                       className="object-cover w-full h-full rounded-t-sm"
                       width={500}
                       height={500}
-                      priority
+                      priority={true}
+                      placeholder="blur"
+                      blurDataURL={blurDataURL}
                     />
                     <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-slate-800">
                       <p className={poorStory.className}>Me!</p>
@@ -129,4 +134,6 @@ export default function AboutPage() {
       </Section>
     </Main>
   );
-}
+};
+
+export default AboutPage;
