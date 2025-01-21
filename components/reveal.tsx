@@ -6,7 +6,7 @@ import { ReactNode } from "react";
 
 const RevealComponent = ({
   children,
-  duration = 0.5,
+  duration = 0.3,
   fromY = 75,
   className = "",
   stagger = 0.2,
