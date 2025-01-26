@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <Section className="relative min-h-dvh flex flex-col justify-center">
       <Container className="[&_span]:text-primary-500">
-        <RevealComponent>
+        <RevealComponent duration={0.4}>
           <h2 className="font-extrabold text-3xl pb-2">
             Alvin Fadli Dwi Mulya
           </h2>
@@ -54,7 +54,7 @@ export default function Hero() {
                 Sagara Technology
               </a>
             </span>
-            . Proficient in fullstack development.
+            . Proficient in fullstack development.{" "}
           </p>
           <p className="text-base text-slate-600 dark:text-slate-200 mt-2 mb-8">
             Check my code on{" "}
@@ -67,9 +67,8 @@ export default function Hero() {
               >
                 github
               </a>
-            </span>
-            {", "}
-            book my{" "}
+            </span>{" "}
+            , book my{" "}
             <span>
               <a
                 href="http://cal.com/alvinfadli"
@@ -79,9 +78,8 @@ export default function Hero() {
               >
                 calendar
               </a>
-            </span>
-            {", "}
-            or email me at{" "}
+            </span>{" "}
+            ,or email me at{" "}
             <span>
               <a
                 href="mailto:alvinfdl21@gmail.com"
