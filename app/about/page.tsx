@@ -96,12 +96,7 @@ const AboutPage = async () => {
                   <span className="text-primary-600">
                     Junior Software Engineer
                   </span>{" "}
-                  at <span className="text-primary-600">Alturian</span> and
-                  part-time{" "}
-                  <span className="text-primary-600">
-                    Associate Software Engineer
-                  </span>{" "}
-                  at <span className="text-primary-600">Magna Partners</span>.
+                  at <span className="text-primary-600">Alturian</span>.
                 </p>
                 <p className="">
                   I&apos;m motivated by a desire to{" "}
